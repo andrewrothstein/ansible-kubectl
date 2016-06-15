@@ -1,0 +1,27 @@
+---
+- name: create target directory
+  file: >-
+    path={{kubectl_install_dir}}
+    state=directory
+    owner=root
+    group=root
+    mode=0755
+
+- name: install kubectl
+  get_url: >-
+    url={{kubectl_url}}
+    dest={{kubectl_install_path}}
+    owner=root
+    group=root
+    mode=0755
+
+- name: linke kubectl
+  file: >-
+    src={{kubectl_install_path}}
+    dest={{kubectl_install_dir}}/kubectl
+    state=link
+    owner=root
+    group=root
+    force=yes
+    
+    

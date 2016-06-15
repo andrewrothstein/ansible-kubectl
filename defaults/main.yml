@@ -1,0 +1,7 @@
+---
+kubectl_ver : v1.2.4
+kubectl_os : linux
+kubectl_platform : amd64
+kubectl_mirror : 'https://storage.googleapis.com/kubernetes-release/release'
+kubectl_url : '{{kubectl_mirror}}/{{kubectl_ver}}/bin/{{kubectl_os}}/{{kubectl_platform}}/kubectl'
+kubectl_install_dir : /usr/local/bin

@@ -1,0 +1,2 @@
+---
+kubectl_install_path : '{{kubectl_install_dir}}/kubectl-{{kubectl_ver}}'
