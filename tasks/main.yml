@@ -1,27 +1,27 @@
 ---
 - name: create target directory
+  become: yes
+  become_user: root
   file: >-
     path={{kubectl_install_dir}}
     state=directory
-    owner=root
-    group=root
     mode=0755
 
 - name: install kubectl
+  become: yes
+  become_user: root
   get_url: >-
     url={{kubectl_url}}
     dest={{kubectl_install_path}}
-    owner=root
-    group=root
     mode=0755
 
-- name: linke kubectl
+- name: link kubectl
+  become: yes
+  become_user: root
   file: >-
     src={{kubectl_install_path}}
     dest={{kubectl_install_dir}}/kubectl
     state=link
-    owner=root
-    group=root
-    force=yes
+
     
     

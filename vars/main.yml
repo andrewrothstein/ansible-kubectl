@@ -1,2 +1,3 @@
 ---
+kubectl_url : '{{kubectl_mirror}}/{{kubectl_ver}}/bin/{{kubectl_os}}/{{kubectl_platform}}/kubectl'
 kubectl_install_path : '{{kubectl_install_dir}}/kubectl-{{kubectl_ver}}'
