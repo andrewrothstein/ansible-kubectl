@@ -1,6 +1,5 @@
 ---
-kubectl_ver : v1.3.4
-kubectl_os : linux
+kubectl_ver : v1.3.5
 kubectl_platform : amd64
 kubectl_mirror : https://storage.googleapis.com/kubernetes-release/release
 kubectl_install_dir : /usr/local/bin
