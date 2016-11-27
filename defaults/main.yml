@@ -2,4 +2,5 @@
 kubectl_ver : v1.4.6
 kubectl_platform : amd64
 kubectl_mirror : https://storage.googleapis.com/kubernetes-release/release
+kubectl_checksum: sha256:6f8242aa29493e1f824997748419e4a287c28b06ed13f17b1ba94bf07fdfa3be
 kubectl_install_dir : /usr/local/bin

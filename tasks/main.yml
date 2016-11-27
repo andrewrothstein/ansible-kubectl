@@ -13,6 +13,7 @@
   get_url: >-
     url={{kubectl_url}}
     dest={{kubectl_install_path}}
+    checksum={{kubectl_checksum}}
     mode=0755
 
 - name: link kubectl
