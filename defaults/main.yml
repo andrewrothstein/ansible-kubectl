@@ -2,5 +2,5 @@
 kubectl_ver : v1.5.0
 kubectl_platform : amd64
 kubectl_mirror : https://storage.googleapis.com/kubernetes-release/release
-kubectl_checksum: sha256:afae4fadb7bbb1532967f88fef1de6458abda17219f634cc2c41608fd83ae7f6
+kubectl_checksum: sha256:ca81695f08810e81b860e53d6ee512a1ce26e4efb53238bae22850db435bafdc
 kubectl_install_dir : /usr/local/bin
