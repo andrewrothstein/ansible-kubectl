@@ -1,28 +1,28 @@
 ---
 - name: create target directory
-  become: yes
+  become: '{{kubectl_privilege_escalate}}'
   become_user: root
-  file: >-
-    path={{kubectl_install_dir}}
-    state=directory
-    mode=0755
+  file:
+    path: '{{kubectl_install_dir}}'
+    state: directory
+    mode: '0755'
 
 - name: install kubectl
-  become: yes
+  become: '{{kubectl_privilege_escalate}}'
   become_user: root
-  get_url: >-
-    url={{kubectl_url}}
-    dest={{kubectl_install_path}}
-    checksum={{kubectl_checksum}}
-    mode=0755
+  get_url:
+    url: '{{kubectl_url}}'
+    dest: '{{kubectl_install_path}}'
+    checksum: '{{kubectl_checksum}}'
+    mode: '0755'
 
 - name: link kubectl
-  become: yes
+  become: '{{kubectl_privilege_escalate}}'
   become_user: root
-  file: >-
-    src={{kubectl_install_path}}
-    dest={{kubectl_install_dir}}/kubectl
-    state=link
+  file:
+    src: '{{kubectl_install_path}}'
+    dest: '{{kubectl_install_dir}}/kubectl'
+    state: link
 
     
     
