@@ -1,4 +1,12 @@
 ---
+- name: resolve platform specific vars
+  include_vars: '{{item}}'
+  with_first_found:
+    - files:
+      - '{{ansible_distribution}}-{{ansible_distribution_release}}.yml'
+      - '{{ansible_distribution}}.yml'
+      - '{{ansible_os_family}}.yml'
+      skip: true
 - name: create target directory
   become: '{{kubectl_privilege_escalate}}'
   become_user: root
@@ -21,7 +29,7 @@
   become_user: root
   file:
     src: '{{kubectl_install_path}}'
-    dest: '{{kubectl_install_dir}}/kubectl'
+    dest: '{{kubectl_install_dir}}/{{kubectl_bin}}'
     state: link
 
     

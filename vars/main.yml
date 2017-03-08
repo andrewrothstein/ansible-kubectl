@@ -1,5 +1,10 @@
 ---
 kubectl_os : '{{ansible_system|lower}}'
-kubectl_url : '{{kubectl_mirror}}/{{kubectl_ver}}/bin/{{kubectl_os}}/{{kubectl_platform}}/kubectl'
+
+# wget -O kubectl-linux-amd64 https://storage.googleapis.com/kubernetes-release/release/v1.5.4/bin/linux/amd64/kubectl
+# wget -O kubectl-darwin-amd64 https://storage.googleapis.com/kubernetes-release/release/v1.5.4/bin/darwin/amd64/kubectl
+# wget -O kubectl-windows-amd64.exe https://storage.googleapis.com/kubernetes-release/release/v1.5.4/bin/windows/amd64/kubectl.exe
+kubectl_bin: kubectl{{kubectl_suffix|default("")}}
+kubectl_url : '{{kubectl_mirror}}/{{kubectl_ver}}/bin/{{kubectl_os}}/{{kubectl_platform}}/{{kubectl_bin}}'
 kubectl_install_path : '{{kubectl_install_dir}}/kubectl-{{kubectl_ver}}'
-kubectl_checksum: '{{kubectl_checksums[kubectl_os]}}'
+kubectl_checksum: '{{kubectl_checksums[kubectl_os][kubectl_platform]}}'
