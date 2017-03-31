@@ -1,3 +1,4 @@
+[![CircleCI](https://circleci.com/gh/andrewrothstein/ansible-kubectl.svg?style=svg)](https://circleci.com/gh/andrewrothstein/ansible-kubectl)
 andrewrothstein.kubectl
 =======================
 
