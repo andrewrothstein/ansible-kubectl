@@ -1,6 +1,6 @@
-[![CircleCI](https://circleci.com/gh/andrewrothstein/ansible-kubectl.svg?style=svg)](https://circleci.com/gh/andrewrothstein/ansible-kubectl)
 andrewrothstein.kubectl
 =======================
+[![CircleCI](https://circleci.com/gh/andrewrothstein/ansible-kubectl.svg?style=svg)](https://circleci.com/gh/andrewrothstein/ansible-kubectl)
 
 A role for installing [kubectl](http://kubernetes.io/docs/user-guide/prereqs/)
 
