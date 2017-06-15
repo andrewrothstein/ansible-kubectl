@@ -1,6 +1,6 @@
 andrewrothstein.kubectl
 =======================
-[![CircleCI](https://circleci.com/gh/andrewrothstein/ansible-kubectl.svg?style=svg)](https://circleci.com/gh/andrewrothstein/ansible-kubectl)
+[![Build Status](https://travis-ci.org/andrewrothstein/ansible-kubectl.svg?branch=master)](https://travis-ci.org/andrewrothstein/ansible-kubectl)
 
 Installs [kubectl](http://kubernetes.io/docs/user-guide/prereqs/)
 
