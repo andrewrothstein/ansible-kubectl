@@ -34,6 +34,3 @@
     src: '{{kubectl_install_path}}'
     dest: '{{kubectl_install_dir}}/{{kubectl_bin}}'
     state: link
-
-    
-    
