@@ -1,14 +1,14 @@
 ---
-kubectl_ver : v1.8.0
+kubectl_ver : v1.8.1
 kubectl_platform : amd64
 kubectl_mirror : https://storage.googleapis.com/kubernetes-release/release
 
 kubectl_checksums:
   darwin:
-    amd64: sha256:de5c7e897640b8c6626af9432d9fc5e2bd2613ef8438de2062c5f800d34a65b5
+    amd64: sha256:e78fb8de67e2502524daddab10dc6960daa58b87425a662c0d9c61bb81248f0c
   linux:
-    amd64: sha256:dfb5af71b3e5317cc647356f5689dd37df8ae7b5fb859455113c3e1ab4db1358
-    arm64: sha256:514303f0f95ad19fe0da9059d0221e74b795b9e1e885160534e10d841fb2b309
+    amd64: sha256:e5a57db78e558f10fd26254362d68523670d1f9ed85cd14d9199295617d6afad
+    arm64: sha256:4f71073b3782ddf7ab0e37be2036a0a9ee9289c799b37251aa1878b875504cc6
 
 kubectl_install_dir : /usr/local/bin
 kubectl_privilege_escalate: True
