@@ -1,5 +1,5 @@
 ---
-kubectl_ver : v1.9.6
+kubectl_ver : v1.10.0
 kubectl_platform : amd64
 kubectl_mirror : https://storage.googleapis.com/kubernetes-release/release
 
@@ -58,6 +58,12 @@ kubectl_checksums:
     linux:
       amd64: sha256:e6aa618d682d0bcc90602cbf2e22a134d36af7199d7081015042eca02ba36368
       arm64: sha256:b7a91f3d2f596e1c1a250bb2991379e39b75284c54fd194e4e1e95b845a28e46
+  v1.10.0:
+    darwin:
+      amd64: sha256:a6a39cbfe1ebf21a71a0e8c6be90f045e4b60c76df22993a472d178fd2a3279d
+    linux:
+      amd64: sha256:49f7e5791d7cd91009c728eb4dc1dbf9ee1ae6a881be6b970e631116065384c3
+      arm64: sha256:2b3c9f5bda3575d7636a65dd0a4783886054a02276ac75cf08129ff325441d52
         
 kubectl_install_dir : /usr/local/bin
 kubectl_privilege_escalate: True
