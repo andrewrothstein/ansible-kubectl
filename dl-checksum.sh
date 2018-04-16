@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-VER=v1.10.0
+VER=v1.10.1
 DIR=~/Downloads
 MIRROR=https://storage.googleapis.com/kubernetes-release/release
 wget -O $DIR/kubectl-linux-amd64-$VER $MIRROR/$VER/bin/linux/amd64/kubectl
