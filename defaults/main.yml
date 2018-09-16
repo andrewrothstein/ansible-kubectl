@@ -106,6 +106,8 @@ kubectl_checksums:
     linux:
       amd64: sha256:b9f6bf64706a0ca5f1ebb9977fc7dd155b19881985a6b116a65db5f361fbc703
       arm64: sha256:f7fe82d7076585106069424003153e0074ef1f4031d3e51fe58ceea44d836e6c
+    windows:
+      amd64: sha256:d84edbf6ba856282b1c2d0685d4e2c866ba9380c53d09d768ab9fe7225bae5d2
 
 kubectl_install_dir: /usr/local/bin
 kubectl_privilege_escalate: True
