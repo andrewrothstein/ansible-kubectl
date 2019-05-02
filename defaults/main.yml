@@ -1,5 +1,5 @@
 ---
-kubectl_ver: v1.13.4
+kubectl_ver: v1.14.1
 kubectl_platform: amd64
 kubectl_mirror: https://storage.googleapis.com/kubernetes-release/release
 
