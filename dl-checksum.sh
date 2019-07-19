@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-VER=v1.15.0
+VER=v1.15.1
 DIR=~/Downloads
 MIRROR=https://storage.googleapis.com/kubernetes-release/release/$VER/bin
 
@@ -16,15 +16,17 @@ dl()
         wget -q -O $LFILE $URL
     fi
 
-    printf "  %s:\n" $OS
-    printf "    # %s\n" $URL
-    printf "    %s: sha256:%s\n" $PLATFORM `sha256sum $LFILE | awk '{print $1}'`
+    printf "      # %s\n" $URL
+    printf "      %s: sha256:%s\n" $PLATFORM `sha256sum $LFILE | awk '{print $1}'`
 }
 
-printf "%s:\n" $VER
+printf "  %s:\n" $VER
+printf "    %s:\n" linux
 dl linux amd64
 dl linux arm64
+printf "    %s:\n" darwin
 dl darwin amd64
+printf "    %s:\n" windows
 dl windows amd64 .exe
 
 
