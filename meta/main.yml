@@ -26,5 +26,6 @@ galaxy_info:
     - k8s
     - kubernetes
     - cloud
+  role_name: kubectl
 
 dependencies: []
