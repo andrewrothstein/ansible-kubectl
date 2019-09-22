@@ -1,23 +1,23 @@
 #!/usr/bin/env sh
-VER=v1.15.3
+VER=v1.16.0
 DIR=~/Downloads
 MIRROR=https://storage.googleapis.com/kubernetes-release/release/$VER/bin
 
 dl()
 {
-    OS=$1
-    PLATFORM=$2
-    SUFFIX=${3:-}
-    URL=$MIRROR/$OS/$PLATFORM/kubectl$SUFFIX
-    LFILE=$DIR/kubectl-$OS-$PLATFORM-$VER 
+    local os=$1
+    local arch=$2
+    local suffix=${3:-}
+    local url=$MIRROR/$os/$arch/kubectl$suffix
+    local lfile=$DIR/kubectl-$os-$arch-$VER 
 
-    if [ ! -e $LFILE ];
+    if [ ! -e $lfile ];
     then
-        wget -q -O $LFILE $URL
+        wget -q -O $lfile $url
     fi
 
-    printf "      # %s\n" $URL
-    printf "      %s: sha256:%s\n" $PLATFORM `sha256sum $LFILE | awk '{print $1}'`
+    printf "      # %s\n" $url
+    printf "      %s: sha256:%s\n" $arch `sha256sum $lfile | awk '{print $1}'`
 }
 
 printf "  %s:\n" $VER

@@ -1,5 +1,5 @@
 ---
-kubectl_ver: v1.15.3
+kubectl_ver: v1.16.0
 kubectl_platform: amd64
 kubectl_mirror: https://storage.googleapis.com/kubernetes-release/release
 
@@ -235,6 +235,18 @@ kubectl_checksums:
     windows:
       # https://storage.googleapis.com/kubernetes-release/release/v1.15.3/bin/windows/amd64/kubectl.exe
       amd64: sha256:b31978b92cdcf65033c94e9093e9f80058a503c4001eac0c7d5be26b493d4684
+  v1.16.0:
+    linux:
+      # https://storage.googleapis.com/kubernetes-release/release/v1.16.0/bin/linux/amd64/kubectl
+      amd64: sha256:4fc8a7024ef17b907820890f11ba7e59a6a578fa91ea593ce8e58b3260f7fb88
+      # https://storage.googleapis.com/kubernetes-release/release/v1.16.0/bin/linux/arm64/kubectl
+      arm64: sha256:bdec615287163fa53b315f9d0481da3900df4063b0a41c3a412077fe765ee6c2
+    darwin:
+      # https://storage.googleapis.com/kubernetes-release/release/v1.16.0/bin/darwin/amd64/kubectl
+      amd64: sha256:a81b23abe67e70f8395ff7a3659bea6610fba98cda1126ef19e0a995f0075d54
+    windows:
+      # https://storage.googleapis.com/kubernetes-release/release/v1.16.0/bin/windows/amd64/kubectl.exe
+      amd64: sha256:a7e4e527735f5bc49ad80b92f4a9d3bb6aebd129f9a708baac80465ebc33a9bc
 
 kubectl_install_dir: /usr/local/bin
 kubectl_privilege_escalate: True
