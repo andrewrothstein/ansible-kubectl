@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-VER=v1.16.0
+VER=${1:-v1.16.1}
 DIR=~/Downloads
 MIRROR=https://storage.googleapis.com/kubernetes-release/release/$VER/bin
 
