@@ -1,5 +1,5 @@
 ---
-kubectl_ver: v1.18.1
+kubectl_ver: v1.18.2
 kubectl_platform: amd64
 kubectl_mirror: https://storage.googleapis.com/kubernetes-release/release
 
@@ -583,3 +583,15 @@ kubectl_checksums:
     windows:
       # https://storage.googleapis.com/kubernetes-release/release/v1.18.1/bin/windows/amd64/kubectl.exe
       amd64: sha256:b299581e66168eb9a0371dc92e74f7b691648c5aa4f0bdc6cd79ea6073356628
+  v1.18.2:
+    linux:
+      # https://storage.googleapis.com/kubernetes-release/release/v1.18.2/bin/linux/amd64/kubectl
+      amd64: sha256:6ea8261b503c6c63d616878837dc70b758d4a3aeb9996ade8e83b51aedac9698
+      # https://storage.googleapis.com/kubernetes-release/release/v1.18.2/bin/linux/arm64/kubectl
+      arm64: sha256:8d4bd6a716e32187e03c5998b4d9570f3b2eb9fb041ac9ed6e9728f04935c2fb
+    darwin:
+      # https://storage.googleapis.com/kubernetes-release/release/v1.18.2/bin/darwin/amd64/kubectl
+      amd64: sha256:7b9bdc2dc8604e590052a58456ac648d3afd1b436e609118538a6ffe07579cc6
+    windows:
+      # https://storage.googleapis.com/kubernetes-release/release/v1.18.2/bin/windows/amd64/kubectl.exe
+      amd64: sha256:974d351e7e0ad1e1ed0901770d65188e8d4c4cdd2494474d14a2b2c325751293
