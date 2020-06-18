@@ -1,4 +1,5 @@
 #!/usr/bin/env sh
+set -e
 DIR=~/Downloads
 MIRROR=https://storage.googleapis.com/kubernetes-release/release
 
@@ -32,4 +33,4 @@ dlver () {
     dl $ver windows amd64 .exe
 }
 
-dlver ${1:-v1.18.3}
+dlver ${1:-v1.18.4}
