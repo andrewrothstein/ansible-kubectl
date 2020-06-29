@@ -7,6 +7,9 @@ galaxy_info:
     - MIT
   min_ansible_version: 2.0
   platforms:
+    - name: Alpine
+      versions:
+        - all
     - name: EL
       versions:
         - 7
@@ -15,16 +18,17 @@ galaxy_info:
       versions:
         - 31
         - 32
-    - name: Ubuntu
+    - name: Gentoo
       versions:
-        - bionic
-        - xenial
+        - all
     - name: MacOSX
       versions:
         - all
-    - name: Alpine
+    - name: Ubuntu
       versions:
-        - all
+        - bionic
+        - focal
+        - xenial
   galaxy_tags:
     - k8s
     - kubernetes
