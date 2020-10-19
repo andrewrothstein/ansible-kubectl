@@ -10,7 +10,7 @@
       paths:
         - '{{ role_path }}/vars'
 
-- name: create target directory
+- name: create install directory {{ kubectl_install_dir }}...
   become: '{{ kubectl_privilege_escalate }}'
   become_user: root
   file:
@@ -18,19 +18,19 @@
     state: directory
     mode: '0755'
 
-- name: install kubectl
+- name: downloading {{ kubectl_url }} to {{ kubectl_install_exe }}...
   become: '{{ kubectl_privilege_escalate }}'
   become_user: root
   get_url:
     url: '{{ kubectl_url }}'
-    dest: '{{ kubectl_install_path }}'
+    dest: '{{ kubectl_install_exe }}'
     checksum: '{{ kubectl_checksum }}'
     mode: '0755'
 
-- name: link kubectl
+- name: linking {{ kubectl_install_link }} to {{ kubectl_install_exe }}...
   become: '{{ kubectl_privilege_escalate }}'
   become_user: root
   file:
-    src: '{{ kubectl_install_path }}'
-    dest: '{{ kubectl_install_dir }}/{{ kubectl_bin }}'
+    src: '{{ kubectl_install_exe }}'
+    dest: '{{ kubectl_install_link }}'
     state: link
