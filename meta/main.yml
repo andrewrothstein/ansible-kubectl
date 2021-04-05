@@ -10,6 +10,11 @@ galaxy_info:
     - name: Alpine
       versions:
         - all
+    - name: Debian
+      versions:
+        - bullseye
+        - buster
+        - stretch
     - name: EL
       versions:
         - 7
