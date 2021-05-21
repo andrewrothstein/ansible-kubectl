@@ -34,3 +34,23 @@
     src: '{{ kubectl_install_exe }}'
     dest: '{{ kubectl_install_link }}'
     state: link
+
+- when: kubectl_install_completions
+  block:
+    - name: create bash completions directory {{ kubectl_bash_completion_dir }}...
+      become: '{{ kubectl_privilege_escalate }}'
+      become_user: root
+      file:
+        path: '{{ kubectl_bash_completion_dir }}'
+        state: directory
+        mode: '0755'
+    - name: getting kubectl bash completion...
+      command: '{{ kubectl_install_link }} completion bash'
+      register: kubectl_bash_completion
+      changed_when: false
+    - name: installing kubectl bash completion to {{ kubectl_bash_completion_file }}...
+      become: '{{ kubectl_privilege_escalate }}'
+      become_user: root
+      copy:
+        content: '{{ kubectl_bash_completion.stdout }}'
+        dest: '{{ kubectl_bash_completion_file }}'
