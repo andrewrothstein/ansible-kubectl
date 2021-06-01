@@ -14,15 +14,13 @@ galaxy_info:
       versions:
         - bullseye
         - buster
-        - stretch
     - name: EL
       versions:
-        - 7
         - 8
     - name: Fedora
       versions:
-        - 31
-        - 32
+        - 34
+        - 35
     - name: MacOSX
       versions:
         - all
@@ -30,7 +28,6 @@ galaxy_info:
       versions:
         - bionic
         - focal
-        - xenial
   galaxy_tags:
     - k8s
     - kubernetes
