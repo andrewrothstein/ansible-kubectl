@@ -5,5 +5,6 @@
   tasks:
   - command: /usr/local/bin/kubectl version --client=true
     register: kubectl_test_output
-  - debug:
+  - name: kubectl version --client=true
+    debug:
       msg: '{{ kubectl_test_output.stdout }}'
