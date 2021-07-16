@@ -1,8 +1,8 @@
 andrewrothstein.kubectl
 =======================
-[![Build Status](https://travis-ci.org/andrewrothstein/ansible-kubectl.svg?branch=master)](https://travis-ci.org/andrewrothstein/ansible-kubectl)
+![Build Status](https://github.com/andrewrothstein/ansible-kubectl/actions/workflows/build.yml/badge.svg)
 
-Installs [kubectl](http://kubernetes.io/docs/user-guide/prereqs/)
+Installs [kubectl](https://kubernetes.io/docs/reference/kubectl/overview/)
 
 Requirements
 ------------
