@@ -29,9 +29,11 @@ dlver () {
     dl $ver linux arm64
     printf "    %s:\n" darwin
     dl $ver darwin amd64
+    dl $ver darwin arm64
     printf "    %s:\n" windows
     dl $ver windows amd64 .exe
+    dl $ver windows arm64 .exe
 }
 
 
-dlver ${1:-v1.23.5}
+dlver ${1:-v1.23.6}
