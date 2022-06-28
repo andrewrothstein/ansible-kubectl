@@ -32,6 +32,7 @@ jobs:
         - rockylinux_8
         - ubuntu_bionic
         - ubuntu_focal
+        - ubuntu_jammy
         python-versions:
         - '3.9'
 name: dcb
