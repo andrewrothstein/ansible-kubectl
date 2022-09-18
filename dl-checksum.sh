@@ -26,7 +26,10 @@ dlver () {
     printf "  %s:\n" $ver
     printf "    %s:\n" linux
     dl $ver linux amd64
+    dl $ver linux arm
     dl $ver linux arm64
+    dl $ver linux s390x
+    dl $ver linux ppc64le
     printf "    %s:\n" darwin
     dl $ver darwin amd64
     dl $ver darwin arm64

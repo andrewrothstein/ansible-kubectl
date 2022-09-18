@@ -1,6 +1,13 @@
 ---
 kubectl_ver: v1.25.0
-kubectl_platform: amd64
+kubectl_arch_map:
+  armv6l: arm
+  armv7l: arm
+  aarch64: arm64
+  x86_64: amd64
+  ppc64le: ppc64le
+  s390x: s390x
+
 kubectl_mirror: https://storage.googleapis.com/kubernetes-release/release
 
 kubectl_install_dir: /usr/local/bin
@@ -1417,8 +1424,14 @@ kubectl_checksums:
     linux:
       # https://storage.googleapis.com/kubernetes-release/release/v1.25.0/bin/linux/amd64/kubectl
       amd64: sha256:e23cc7092218c95c22d8ee36fb9499194a36ac5b5349ca476886b7edc0203885
+      # https://storage.googleapis.com/kubernetes-release/release/v1.25.0/bin/linux/arm/kubectl
+      arm: sha256:0b907cfdcabafae7d2d4ac7de55e3ef814df999acdf6b1bd0ecf6abbef7c7131
       # https://storage.googleapis.com/kubernetes-release/release/v1.25.0/bin/linux/arm64/kubectl
       arm64: sha256:24db547bbae294c5c44f2b4a777e45f0e2f3d6295eace0d0c4be2b2dfa45330d
+      # https://storage.googleapis.com/kubernetes-release/release/v1.25.0/bin/linux/s390x/kubectl
+      s390x: sha256:9888d764181703e561a99d181cc6d18f22bc61096eb0e6b8df75df2b5d8078b5
+      # https://storage.googleapis.com/kubernetes-release/release/v1.25.0/bin/linux/ppc64le/kubectl
+      ppc64le: sha256:dffe15c626d7921d77e85f390b15f13ebc3a9699785f6b210cd13fa6f4653513
     darwin:
       # https://storage.googleapis.com/kubernetes-release/release/v1.25.0/bin/darwin/amd64/kubectl
       amd64: sha256:c17ca54480437d069679d8da8640bca0bd84a5e2614ce9fc7e9c955c4145b768

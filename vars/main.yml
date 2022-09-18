@@ -1,8 +1,9 @@
 ---
-kubectl_os: '{{ ansible_system|lower }}'
+kubectl_os: '{{ ansible_system | lower }}'
+kubectl_arch: '{{ kubectl_arch_map[ansible_architecture] }}'
 
 kubectl_bin: kubectl{{ kubectl_suffix|default("") }}
-kubectl_url: '{{ kubectl_mirror }}/{{ kubectl_ver }}/bin/{{ kubectl_os }}/{{ kubectl_platform }}/{{ kubectl_bin }}'
+kubectl_url: '{{ kubectl_mirror }}/{{ kubectl_ver }}/bin/{{ kubectl_os }}/{{ kubectl_arch }}/{{ kubectl_bin }}'
 kubectl_install_exe: '{{ kubectl_install_dir }}/kubectl-{{ kubectl_ver }}'
 kubectl_install_link: '{{ kubectl_install_dir }}/{{ kubectl_bin }}'
-kubectl_checksum: '{{ kubectl_checksums[kubectl_ver][kubectl_os][kubectl_platform] }}'
+kubectl_checksum: '{{ kubectl_checksums[kubectl_ver][kubectl_os][kubectl_arch] }}'
