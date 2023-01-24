@@ -35,5 +35,3 @@ galaxy_info:
     - kubernetes
     - cloud
   role_name: kubectl
-
-dependencies: []
