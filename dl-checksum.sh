@@ -38,6 +38,4 @@ dlver () {
     dl $ver windows arm64 .exe
 }
 
-dlver v1.27.4
-dlver v1.28.0
-dlver ${1:-v1.28.1}
+dlver ${1:-v1.28.2}
