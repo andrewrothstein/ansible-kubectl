@@ -1,10 +1,10 @@
 ---
 - hosts: all
   roles:
-  - role: '{{ playbook_dir }}'
+    - role: '{{ playbook_dir }}'
   tasks:
-  - command: /usr/local/bin/kubectl version --client=true
-    register: kubectl_test_output
-  - name: kubectl version --client=true
-    debug:
-      msg: '{{ kubectl_test_output.stdout }}'
+    - command: /usr/local/bin/kubectl version --client=true
+      register: kubectl_test_output
+    - name: kubectl version --client=true
+      debug:
+        msg: '{{ kubectl_test_output.stdout }}'
