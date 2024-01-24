@@ -1,6 +1,6 @@
 ---
-- name: resolve platform specific vars
-  include_vars: '{{ item }}'
+- name: Resolve platform specific vars
+  ansible.builtin.include_vars: '{{ item }}'
   with_first_found:
     - files:
         - '{{ ansible_distribution }}-{{ ansible_distribution_release }}.yml'
@@ -10,27 +10,27 @@
       paths:
         - '{{ role_path }}/vars'
 
-- name: create install directory {{ kubectl_install_dir }}...
+- name: Create install directory {{ kubectl_install_dir }}...
   become: '{{ kubectl_privilege_escalate }}'
   become_user: root
-  file:
+  ansible.builtin.file:
     path: '{{ kubectl_install_dir }}'
     state: directory
-    mode: '0755'
+    mode: '755'
 
-- name: downloading {{ kubectl_url }} to {{ kubectl_install_exe }}...
+- name: Downloading {{ kubectl_url }} to {{ kubectl_install_exe }}...
   become: '{{ kubectl_privilege_escalate }}'
   become_user: root
-  get_url:
+  ansible.builtin.get_url:
     url: '{{ kubectl_url }}'
     dest: '{{ kubectl_install_exe }}'
     checksum: '{{ kubectl_checksum }}'
-    mode: '0755'
+    mode: '755'
 
-- name: linking {{ kubectl_install_link }} to {{ kubectl_install_exe }}...
+- name: Linking {{ kubectl_install_link }} to {{ kubectl_install_exe }}...
   become: '{{ kubectl_privilege_escalate }}'
   become_user: root
-  file:
+  ansible.builtin.file:
     src: '{{ kubectl_install_exe }}'
     dest: '{{ kubectl_install_link }}'
     state: link

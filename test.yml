@@ -1,10 +1,14 @@
 ---
-- hosts: all
-  roles:
-    - role: '{{ playbook_dir }}'
+- name: Testing andrewrothstein.kubectl
+  hosts: all
   tasks:
-    - command: /usr/local/bin/kubectl version --client=true
+    - name: Installing andrewrothstein.kubectl
+      ansible.builtin.include_role:
+        name: '{{ playbook_dir }}'
+    - name: Executing 'kubectl version --client=true'
+      ansible.builtin.command: /usr/local/bin/kubectl version --client=true
+      changed_when: false
       register: kubectl_test_output
-    - name: kubectl version --client=true
-      debug:
+    - name: Output from 'kubectl version --client=true'
+      ansible.builtin.debug:
         msg: '{{ kubectl_test_output.stdout }}'
