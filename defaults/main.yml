@@ -1,5 +1,5 @@
 ---
-kubectl_ver: v1.30.3
+kubectl_ver: v1.31.0
 kubectl_arch_map:
   aarch64: arm64
   aarch32: arm
@@ -2412,3 +2412,25 @@ kubectl_checksums:
       amd64: sha256:4d066fc70ebfaad0da43c93daebdb62208993c04ea9a2b5e9ba459b18d6a1c81
       # https://storage.googleapis.com/kubernetes-release/release/v1.30.3/bin/windows/arm64/kubectl.exe
       arm64: sha256:350e4e1a0bf37434ef9ce7bf0d830a9c468c69ec60c4e861514c87fbd4f83f15
+  v1.31.0:
+    linux:
+      # https://storage.googleapis.com/kubernetes-release/release/v1.31.0/bin/linux/amd64/kubectl
+      amd64: sha256:7c27adc64a84d1c0cc3dcf7bf4b6e916cc00f3f576a2dbac51b318d926032437
+      # https://storage.googleapis.com/kubernetes-release/release/v1.31.0/bin/linux/arm/kubectl
+      arm: sha256:a4d6292c88c199688a03ea211bea08c8ae29f1794f5deeeef46862088d124baa
+      # https://storage.googleapis.com/kubernetes-release/release/v1.31.0/bin/linux/arm64/kubectl
+      arm64: sha256:f42832db7d77897514639c6df38214a6d8ae1262ee34943364ec1ffaee6c009c
+      # https://storage.googleapis.com/kubernetes-release/release/v1.31.0/bin/linux/s390x/kubectl
+      s390x: sha256:e13292a7269a3edc195539ec54690aa85c3b19d5f9d866d58ea99e4d6a0c63a9
+      # https://storage.googleapis.com/kubernetes-release/release/v1.31.0/bin/linux/ppc64le/kubectl
+      ppc64le: sha256:92393bc295423429522fa8c49724f95f31fa9bf20062d2c123e928d08886c95d
+    darwin:
+      # https://storage.googleapis.com/kubernetes-release/release/v1.31.0/bin/darwin/amd64/kubectl
+      amd64: sha256:fb6e07a69acc4e16885eda55b524c13b84bfbcf78cfac8d6c378d2bad321e105
+      # https://storage.googleapis.com/kubernetes-release/release/v1.31.0/bin/darwin/arm64/kubectl
+      arm64: sha256:b7472df17a885574ed7273947a8a274c156357db21b981208e8e109b9ed4022d
+    windows:
+      # https://storage.googleapis.com/kubernetes-release/release/v1.31.0/bin/windows/amd64/kubectl.exe
+      amd64: sha256:a618de26c86421a394de7041f9d0a87752dd4e555894d2278421cf12097fa531
+      # https://storage.googleapis.com/kubernetes-release/release/v1.31.0/bin/windows/arm64/kubectl.exe
+      arm64: sha256:76146fb63f44dbdd091b996d5212d1014a65984d7a5a5d0810da453d52f22f3e
