@@ -1,5 +1,5 @@
 ---
-kubectl_ver: v1.31.0
+kubectl_ver: v1.31.1
 kubectl_arch_map:
   aarch64: arm64
   aarch32: arm
@@ -10,7 +10,7 @@ kubectl_arch_map:
   s390x: s390x
   x86_64: amd64
 
-kubectl_mirror: https://storage.googleapis.com/kubernetes-release/release
+kubectl_mirror: https://dl.k8s.io/release
 
 kubectl_install_dir: /usr/local/bin
 kubectl_privilege_escalate: true
@@ -2434,3 +2434,25 @@ kubectl_checksums:
       amd64: sha256:a618de26c86421a394de7041f9d0a87752dd4e555894d2278421cf12097fa531
       # https://storage.googleapis.com/kubernetes-release/release/v1.31.0/bin/windows/arm64/kubectl.exe
       arm64: sha256:76146fb63f44dbdd091b996d5212d1014a65984d7a5a5d0810da453d52f22f3e
+  v1.31.1:
+    linux:
+      # https://dl.k8s.io/release/v1.31.1/bin/linux/amd64/kubectl
+      amd64: sha256:57b514a7facce4ee62c93b8dc21fda8cf62ef3fed22e44ffc9d167eab843b2ae
+      # https://dl.k8s.io/release/v1.31.1/bin/linux/arm/kubectl
+      arm: sha256:51b178c9362a4fbe35644399f113d7f904d306261953a51c5c0a57676e209fa6
+      # https://dl.k8s.io/release/v1.31.1/bin/linux/arm64/kubectl
+      arm64: sha256:3af2451191e27ecd4ac46bb7f945f76b71e934d54604ca3ffc7fe6f5dd123edb
+      # https://dl.k8s.io/release/v1.31.1/bin/linux/s390x/kubectl
+      s390x: sha256:7814343182e762d095b2f103e72d6080fc64ae8137212ff0bf14daa6ef37c034
+      # https://dl.k8s.io/release/v1.31.1/bin/linux/ppc64le/kubectl
+      ppc64le: sha256:635275e4b207902bc6dda29de898e5152229271c46cb9613340e36c3abc2cb67
+    darwin:
+      # https://dl.k8s.io/release/v1.31.1/bin/darwin/amd64/kubectl
+      amd64: sha256:4b86d3fb8dee8dd61f341572f1ba13c1030d493f4dc1b4831476f61f3cbb77d0
+      # https://dl.k8s.io/release/v1.31.1/bin/darwin/arm64/kubectl
+      arm64: sha256:08909b92e62004f4f1222dfd39214085383ea368bdd15c762939469c23484634
+    windows:
+      # https://dl.k8s.io/release/v1.31.1/bin/windows/amd64/kubectl.exe
+      amd64: sha256:e4b5251b43abd2e36bf8436d780c34298bcbfd950eabf6f667fdf6a9dc363fbd
+      # https://dl.k8s.io/release/v1.31.1/bin/windows/arm64/kubectl.exe
+      arm64: sha256:e9b34dd21dca0f16422b484d00ce9348aa1d24cf7d5e3f56baa4b4d4e3e32844

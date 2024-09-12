@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 set -e
 DIR=~/Downloads
-MIRROR=https://storage.googleapis.com/kubernetes-release/release
+MIRROR=https://dl.k8s.io/release
 
 dl()
 {
@@ -38,4 +38,4 @@ dlver () {
     dl $ver windows arm64 .exe
 }
 
-dlver ${1:-v1.31.0}
+dlver ${1:-v1.31.1}
