@@ -1,5 +1,5 @@
 ---
-kubectl_ver: v1.31.3
+kubectl_ver: v1.32.2
 kubectl_arch_map:
   aarch64: arm64
   aarch32: arm
@@ -2500,3 +2500,69 @@ kubectl_checksums:
       amd64: sha256:0ad6b474beb5cbc22216f09cc9e660c1d2d21035349ad9c9e3a253754c384339
       # https://dl.k8s.io/release/v1.31.3/bin/windows/arm64/kubectl.exe
       arm64: sha256:48a3108679c0c9473419cc768f1a5c2720d67730fa9c855831c01dafa4372230
+  v1.32.0:
+    linux:
+      # https://dl.k8s.io/release/v1.32.0/bin/linux/amd64/kubectl
+      amd64: sha256:646d58f6d98ee670a71d9cdffbf6625aeea2849d567f214bc43a35f8ccb7bf70
+      # https://dl.k8s.io/release/v1.32.0/bin/linux/arm/kubectl
+      arm: sha256:6b33ea8c80f785fb07be4d021301199ae9ee4f8d7ea037a8ae544d5a7514684e
+      # https://dl.k8s.io/release/v1.32.0/bin/linux/arm64/kubectl
+      arm64: sha256:ba4004f98f3d3a7b7d2954ff0a424caa2c2b06b78c17b1dccf2acc76a311a896
+      # https://dl.k8s.io/release/v1.32.0/bin/linux/s390x/kubectl
+      s390x: sha256:bf7847fdb130484f5e2ddf4e9059bffd4263f792cb759f204d131be1feafe922
+      # https://dl.k8s.io/release/v1.32.0/bin/linux/ppc64le/kubectl
+      ppc64le: sha256:9f3f239e2601ce53ec4e70b80b7684f9c89817cc9938ed0bb14f125a3c4f8c8f
+    darwin:
+      # https://dl.k8s.io/release/v1.32.0/bin/darwin/amd64/kubectl
+      amd64: sha256:516585916f499077fac8c2fdd2a382818683f831020277472e6bcf8d1a6f9be4
+      # https://dl.k8s.io/release/v1.32.0/bin/darwin/arm64/kubectl
+      arm64: sha256:5bfd5de53a054b4ef614c60748e28bf47441c7ed4db47ec3c19a3e2fa0eb5555
+    windows:
+      # https://dl.k8s.io/release/v1.32.0/bin/windows/amd64/kubectl.exe
+      amd64: sha256:3601cb47c4d6a42b033a8f8fca68bc6f24baa99f5a1250fdb138d24a6c7cc749
+      # https://dl.k8s.io/release/v1.32.0/bin/windows/arm64/kubectl.exe
+      arm64: sha256:ab907e0c598c1fcc9c79958890d1fc5df1552fc4ece53e5677a2b10349b1042b
+  v1.32.1:
+    linux:
+      # https://dl.k8s.io/release/v1.32.1/bin/linux/amd64/kubectl
+      amd64: sha256:e16c80f1a9f94db31063477eb9e61a2e24c1a4eee09ba776b029048f5369db0c
+      # https://dl.k8s.io/release/v1.32.1/bin/linux/arm/kubectl
+      arm: sha256:8ccf69be2578d3a324e9fc7d4f3b29bc9743cc02d72f33ba2d0fe30389014bc8
+      # https://dl.k8s.io/release/v1.32.1/bin/linux/arm64/kubectl
+      arm64: sha256:98206fd83a4fd17f013f8c61c33d0ae8ec3a7c53ec59ef3d6a0a9400862dc5b2
+      # https://dl.k8s.io/release/v1.32.1/bin/linux/s390x/kubectl
+      s390x: sha256:081c80142fd450d93dd4a82330d182dd045dcb2fb0c220e65ef7158f13df12d8
+      # https://dl.k8s.io/release/v1.32.1/bin/linux/ppc64le/kubectl
+      ppc64le: sha256:46d98d3463e065dff035d76f6c2b604c990d79634cc574d43b0c21f0367bbf0c
+    darwin:
+      # https://dl.k8s.io/release/v1.32.1/bin/darwin/amd64/kubectl
+      amd64: sha256:8bffe90f5a034d392a0ba6fd7ee16c0d40b1dba1ccc4350821102c5d5c56d846
+      # https://dl.k8s.io/release/v1.32.1/bin/darwin/arm64/kubectl
+      arm64: sha256:5b89f9598e2e7da04cc0b5dd6e8daca01d23855fd00c8ea259fd2aab993114db
+    windows:
+      # https://dl.k8s.io/release/v1.32.1/bin/windows/amd64/kubectl.exe
+      amd64: sha256:b6378f34dcab2d411fb7a89ba700df0f784c0b063dd02dbb92396a72c4d3104e
+      # https://dl.k8s.io/release/v1.32.1/bin/windows/arm64/kubectl.exe
+      arm64: sha256:490705ab8084d5ca7a4611fc11dab5ea2402834a83992a537e02fe4dba18bbf6
+  v1.32.2:
+    linux:
+      # https://dl.k8s.io/release/v1.32.2/bin/linux/amd64/kubectl
+      amd64: sha256:4f6a959dcc5b702135f8354cc7109b542a2933c46b808b248a214c1f69f817ea
+      # https://dl.k8s.io/release/v1.32.2/bin/linux/arm/kubectl
+      arm: sha256:e1e6a2fd4571cd66c885aa42b290930660d34a7331ffb576fcab9fd1a0941a83
+      # https://dl.k8s.io/release/v1.32.2/bin/linux/arm64/kubectl
+      arm64: sha256:7381bea99c83c264100f324c2ca6e7e13738a73b8928477ac805991440a065cd
+      # https://dl.k8s.io/release/v1.32.2/bin/linux/s390x/kubectl
+      s390x: sha256:f2d8f403b73f0f81a1c58affbceee1fe1d3389e20ba4062f949cdf4abe04d635
+      # https://dl.k8s.io/release/v1.32.2/bin/linux/ppc64le/kubectl
+      ppc64le: sha256:c25500027cd331ae3e65bed2612491c5307721894e9d39e869f24ca14973677f
+    darwin:
+      # https://dl.k8s.io/release/v1.32.2/bin/darwin/amd64/kubectl
+      amd64: sha256:371b8fbd481e1e9052ace16d9c243e92618a2ea9a18c1aaf235d35fef20c0c32
+      # https://dl.k8s.io/release/v1.32.2/bin/darwin/arm64/kubectl
+      arm64: sha256:31b6318deaa72014b72121e1c7a2e12496d077cee49bbeda94250aec4c978ffb
+    windows:
+      # https://dl.k8s.io/release/v1.32.2/bin/windows/amd64/kubectl.exe
+      amd64: sha256:cf51a1c6bf3b6ba6a5b549d1debf8aa6afb00c4c5a3d5d4bb1072f54cbe4390f
+      # https://dl.k8s.io/release/v1.32.2/bin/windows/arm64/kubectl.exe
+      arm64: sha256:87c2bdd4509cb7e0366ae04ff240d84b42263764117e9a7cc09687bd4e4f9b98
