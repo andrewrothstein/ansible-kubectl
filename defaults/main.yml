@@ -1,5 +1,5 @@
 ---
-kubectl_ver: v1.32.2
+kubectl_ver: v1.32.8
 kubectl_arch_map:
   aarch64: arm64
   aarch32: arm
@@ -2566,3 +2566,25 @@ kubectl_checksums:
       amd64: sha256:cf51a1c6bf3b6ba6a5b549d1debf8aa6afb00c4c5a3d5d4bb1072f54cbe4390f
       # https://dl.k8s.io/release/v1.32.2/bin/windows/arm64/kubectl.exe
       arm64: sha256:87c2bdd4509cb7e0366ae04ff240d84b42263764117e9a7cc09687bd4e4f9b98
+  v1.32.8:
+    linux:
+      # https://dl.k8s.io/v1.32.8/kubernetes-client-linux-amd64.tar.gz
+      amd64: sha512:7882ad555ebc659c21c65f1f4b7863dd41378930154e6698495487fd556a65775f06b1f91f1a4945d616a0f926539fb53f9d9db487a4ca670c81dc62ed7b15cc
+      # https://dl.k8s.io/v1.32.8/kubernetes-client-linux-arm.tar.gz
+      arm: sha512:8eb7495be64b11200810bee4910dd205daec4dcfa33c9cc9c23199936d63341311ea2f0ff329e3a9a9c4f7710d34f4e4e433a398550f047ddee7fc8f1b368e0d
+      # https://dl.k8s.io/v1.32.8/kubernetes-client-linux-arm64.tar.gz
+      arm64: sha512:bab344a61a587af79c0d693ae68afb36708b5402b03c02b41127b7c607a46f87e2c24c4df3894f1e083fc08e12f7205c1c8effcd2a5480e97f443a33999c3840
+      # https://dl.k8s.io/v1.32.8/kubernetes-client-linux-s390x.tar.gz
+      s390x: sha512:e22803b5b6c68470c519decf86d743a6d14f7c47d21321c1a641d30461f3641f36b072ab1331cfbf9db0207426a5f2121f03aa27c2e962cc57bdb31b530febb9
+      # https://dl.k8s.io/v1.32.8/kubernetes-client-linux-ppc64le.tar.gz
+      ppc64le: sha512:0e6c606200f8a4a043b3a4358a25af6eb9656361e3c657b89a2f386e27444f1f342b8e27ed312d15ace0dc83442475890e607e9af80f598cec12a700ed707535
+    darwin:
+      # https://dl.k8s.io/v1.32.8/kubernetes-client-darwin-amd64.tar.gz
+      amd64: sha512:8fe4e5881530fc282c30d2e475f42dcec3630502b1e54e4626f19d6eed36cf473ba9f2d12a5cd3d18b8369ece02699937dd028f686c11ab8a4c6b79576b1988f
+      # https://dl.k8s.io/v1.32.8/kubernetes-client-darwin-arm64.tar.gz
+      arm64: sha512:bcd510b3bfdd42c6a7607447aec03857c6197fedc59a39f1907583ddfce7ef1fe0cad07ba7a2f86fa20b0ef9b02146c942f93be0409fdc92d5c563330c39c40a
+    windows:
+      # https://dl.k8s.io/v1.32.8/kubernetes-client-windows-amd64.tar.gz
+      amd64: sha512:292638b232153bbf101142374f13caa5365dd0ac8e744978fdc2f2f02054e9e1613598f95de43994c9c4354dcb24ad2c4587afdbae01e38d1a3ee4c6c7b6d081
+      # https://dl.k8s.io/v1.32.8/kubernetes-client-windows-arm64.tar.gz
+      arm64: sha512:0df615d060d286674562cea33f93b9387484aad716277d4fa43635bf92e8d557768a62e507c9bdbbf190747d71c2d3ff6e8c5131705d7b1957e4dab48306d42b
