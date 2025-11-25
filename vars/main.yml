@@ -1,6 +1,6 @@
 ---
-kubectl_os: '{{ ansible_system | lower }}'
-kubectl_arch: '{{ kubectl_arch_map[ansible_architecture] }}'
+kubectl_os: '{{ ansible_facts["system"] | lower }}'
+kubectl_arch: '{{ kubectl_arch_map[ansible_facts["architecture"]] }}'
 
 kubectl_bin: kubectl{{ kubectl_suffix | default("") }}
 kubectl_url: '{{ kubectl_mirror }}/{{ kubectl_ver }}/bin/{{ kubectl_os }}/{{ kubectl_arch }}/{{ kubectl_bin }}'
