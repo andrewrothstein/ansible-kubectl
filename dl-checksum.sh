@@ -38,7 +38,7 @@ dlver () {
     dl $ver windows arm64 .exe
 }
 
-#dlver v1.32.12
-#dlver v1.33.8
-#dlver v1.34.4
-dlver ${1:-v1.35.4}
+#dlver v1.33.12
+#dlver v1.34.8
+#dlver v1.35.5
+dlver ${1:-v1.36.1}
