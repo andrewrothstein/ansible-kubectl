@@ -41,4 +41,4 @@ dlver () {
 #dlver v1.33.12
 #dlver v1.34.8
 #dlver v1.35.5
-dlver ${1:-v1.36.1}
+dlver ${1:-v1.36.2}
